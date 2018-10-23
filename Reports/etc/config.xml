@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ecommistry_Reports>
+            <version>1.0.0</version>
+        </Ecommistry_Reports>
+    </modules>
+    <global>
+        <blocks>
+            <ecommistry_reports>
+                <class>Ecommistry_Reports_Block</class>
+            </ecommistry_reports>
+        </blocks>
+        <helpers>
+            <ecommistry_reports>
+                <class>Ecommistry_Reports_Helper</class>
+            </ecommistry_reports>
+        </helpers>
+        <models>
+            <ecommistry_reports>
+                <class>Ecommistry_Reports_Model</class>
+            </ecommistry_reports>
+        </models>
+        <template>
+            <email>
+                <ecommistry_box_replace_product translate="label">
+                    <label>Subscription: Product Replacement Template</label>
+                    <file>ecommistry/subscription/replace_product.html</file>
+                    <type>html</type>
+                </ecommistry_box_replace_product>
+                <ecommistry_box_replace_product_admin translate="label">
+                    <label>Subscription: Product Replacement Template Moxie</label>
+                    <file>ecommistry/subscription/replace_product_admin.html</file>
+                    <type>html</type>
+                </ecommistry_box_replace_product_admin>
+            </email>
+        </template>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Ecommistry_Reports before="Mage_Adminhtml">Ecommistry_Reports_Adminhtml</Ecommistry_Reports>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <ecommistry_reports>
+                    <file>ecommistry/reports.xml</file>
+                </ecommistry_reports>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

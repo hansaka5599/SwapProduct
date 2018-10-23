@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <ecommistry_subscription translate="label" module="ecommistry_reports">
+            <groups>
+                <email translate="label" module="sales">
+                    <label>Transactional Emails</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <replace_product_template translate="label">
+                            <label>Replace Product Notification Template</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_template</source_model>
+                            <sort_order>95</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This email template will used to send replace/swap product notification email to customer</comment>
+                        </replace_product_template>
+                        <replace_product_email translate="label">
+                            <label>Replace Product Notification Email Moxie</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>96</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>This email address will used to send replace/swap product notification email to Moxie</comment>
+                        </replace_product_email>
+                        <replace_product_template_admin translate="label">
+                            <label>Replace Product Notification Template Moxie</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_template</source_model>
+                            <sort_order>97</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>This email template will used to send replace/swap product notification email to Moxie</comment>
+                        </replace_product_template_admin>
+                    </fields>
+                </email>
+            </groups>
+        </ecommistry_subscription>
+    </sections>
+</config>

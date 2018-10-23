@@ -1,1 +1,1 @@
-# SwapProduct
+# SwapProduct M1 module to swap subscription products with a new product, notify customers and admin via email

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <report>
+            <children>
+                <products>
+                    <children>
+                        <swap_products translate="title" module="reports">
+                            <title>Swap Products</title>
+                            <action>adminhtml/report_swap/index</action>
+                        </swap_products>
+                    </children>
+                </products>
+            </children>
+        </report>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <report translate="title" module="ecommistry_reports">
+                        <children>
+                            <products>
+                                <children>
+                                    <swap_products translate="title">
+                                        <title>Swap Products</title>
+                                    </swap_products>
+                                </children>
+                            </products>
+                        </children>
+                    </report>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
